@@ -24,27 +24,27 @@ public class HibernateUtils {
         properties.put(Environment.SHOW_SQL, "true");
         
         conf.setProperties(properties);
-        conf.addAnnotatedClass(Camera.class);
-        conf.addAnnotatedClass(ChiTietSP.class);
-        conf.addAnnotatedClass(Chipse.class);
-        conf.addAnnotatedClass(ChucVu.class);
-        conf.addAnnotatedClass(DongSP.class);
-        conf.addAnnotatedClass(GiamGia.class);
-        conf.addAnnotatedClass(HoaDon.class);
-        conf.addAnnotatedClass(HoaDonChiTiet.class);
-        conf.addAnnotatedClass(Imei.class);
-        conf.addAnnotatedClass(ImeiDaBan.class);
-        conf.addAnnotatedClass(KhachHang.class);
-        conf.addAnnotatedClass(ManHinh.class);
-        conf.addAnnotatedClass(MauSac.class);
-        conf.addAnnotatedClass(MauSac.class);
-        conf.addAnnotatedClass(NhanVien.class);
-        conf.addAnnotatedClass(PhanLoaiHang.class);
-        conf.addAnnotatedClass(Pin.class);
-        conf.addAnnotatedClass(Ram.class);
-        conf.addAnnotatedClass(Rom.class);
-        conf.addAnnotatedClass(SanPham.class);
-        conf.addAnnotatedClass(XuatXu.class);
+//        conf.addAnnotatedClass(Camera.class);
+//        conf.addAnnotatedClass(ChiTietSP.class);
+//        conf.addAnnotatedClass(Chipse.class);
+//        conf.addAnnotatedClass(ChucVu.class);
+//        conf.addAnnotatedClass(DongSP.class);
+//        conf.addAnnotatedClass(GiamGia.class);
+//        conf.addAnnotatedClass(HoaDon.class);
+//        conf.addAnnotatedClass(HoaDonChiTiet.class);
+//        conf.addAnnotatedClass(Imei.class);
+//        conf.addAnnotatedClass(ImeiDaBan.class);
+//        conf.addAnnotatedClass(KhachHang.class);
+//        conf.addAnnotatedClass(ManHinh.class);
+//        conf.addAnnotatedClass(MauSac.class);
+//        conf.addAnnotatedClass(MauSac.class);
+//        conf.addAnnotatedClass(NhanVien.class);
+//        conf.addAnnotatedClass(PhanLoaiHang.class);
+//        conf.addAnnotatedClass(Pin.class);
+//        conf.addAnnotatedClass(Ram.class);
+//        conf.addAnnotatedClass(Rom.class);
+//        conf.addAnnotatedClass(SanPham.class);
+//        conf.addAnnotatedClass(XuatXu.class);
 
         ServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .applySettings(conf.getProperties()).build();
