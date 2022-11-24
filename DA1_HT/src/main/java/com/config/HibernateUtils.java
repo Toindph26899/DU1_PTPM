@@ -19,8 +19,9 @@ public class HibernateUtils {
         
         properties.put(Environment.DIALECT, "org.hibernate.dialect.SQLServerDialect");
         properties.put(Environment.DRIVER, "com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        properties.put(Environment.URL, "jdbc:sqlserver://localhost;databaseName=DU1;user=sa;password=123456;"
-                + "encrypt=false;");
+        properties.put(Environment.URL, "jdbc:sqlserver://localhost;databaseName=DU1;encrypt=false;");
+        properties.put(Environment.USER, "sa");
+        properties.put(Environment.PASS, "123456");
         properties.put(Environment.SHOW_SQL, "true");
         
         conf.setProperties(properties);
@@ -53,7 +54,11 @@ public class HibernateUtils {
         
     }
     
-    public SessionFactory getFACTORY() {
+    public static SessionFactory getFACTORY() {
         return FACTORY;
+    }
+    
+    public static void main(String[] args) {
+        getFACTORY();
     }
 }
