@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.mycompany_DA1_HT_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.entities.Imei</class>
+    <class>com.entities.Chipse</class>
+    <class>com.entities.ChiTietSP</class>
+    <class>com.entities.ImeiDaBan</class>
+    <class>com.entities.NhanVien</class>
+    <class>com.entities.SanPham</class>
+    <class>com.entities.MauSac</class>
+    <class>com.entities.PhanLoaiHang</class>
+    <class>com.entities.Rom</class>
+    <class>com.entities.Ram</class>
+    <class>com.entities.HoaDon</class>
+    <class>com.entities.KhachHang</class>
+    <class>com.entities.GiamGia</class>
+    <class>com.entities.Camera</class>
+    <class>com.entities.Pin</class>
+    <class>com.entities.DongSP</class>
+    <class>com.entities.HoaDonChiTiet</class>
+    <class>com.entities.XuatXu</class>
+    <class>com.entities.ChucVu</class>
+    <class>com.entities.ManHinh</class>
+    <class>com.entities.Sysdiagrams</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=DU1;encrypt=false;"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>
